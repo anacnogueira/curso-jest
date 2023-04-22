@@ -1,0 +1,15 @@
+{
+  "name": "projeto_jest",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {},
+  "devDependencies": {
+    "jest": "^29.5.0"
+  },
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "anacnogueira",
+  "license": "ISC"
+}

@@ -4,4 +4,4 @@ test('There is no I in team', ()=> {
 
 test('But there is "stop" on Christoph', () =>{
     expect('Christoph').toMatch(/stop/);
-})
+});

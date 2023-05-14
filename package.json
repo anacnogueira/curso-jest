@@ -16,6 +16,7 @@
   "author": "anacnogueira",
   "license": "ISC",
   "dependencies": {
+    "dinero.js": "^1.9.1",
     "lodash": "^4.17.21"
   }
 }

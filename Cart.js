@@ -18,6 +18,12 @@ export default class Cart {
     remove(this.items, { product });
   }
 
+  checkout() {
+    return {
+      total: this.getTotal(),
+      items: this.items,
+    };
+  }
   getTotal() {
     return this.items.reduce((acc, item) => {
       return acc + item.quantity * item.product.price;

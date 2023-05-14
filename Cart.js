@@ -18,15 +18,30 @@ export default class Cart {
     remove(this.items, { product });
   }
 
-  checkout() {
-    return {
-      total: this.getTotal(),
-      items: this.items,
-    };
-  }
   getTotal() {
     return this.items.reduce((acc, item) => {
       return acc + item.quantity * item.product.price;
     }, 0);
+  }
+
+  summary() {
+    const total = this.getTotal();
+    const items = this.items;
+
+    return {
+      total,
+      items,
+    };
+  }
+
+  checkout() {
+    const { total, items } = this.summary();
+
+    this.items = [];
+
+    return {
+      total,
+      items,
+    };
   }
 }
